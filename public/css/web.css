@@ -62,13 +62,14 @@ nav{
                     height: 2px; width: 0%;
                     display: block;
                     background: var(--clr-secondary);
+                    transition: 300ms all ease-in-out;
                 }
                 &:hover&&::after{
                     width: 100%;
                     background: var(--clr-main);
                 }
                 &:hover{
-                    color: var(--clr-main);
+                    color: var(--clr-alt);
                 }
             }
         }
