@@ -1,35 +1,29 @@
-body{
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-/* nav{
-    position: fixed;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 8vh; width: 80%;
-    background: transparent;
-    border-radius: 9999px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-    display: flex;
-    z-index: 10;
-    backdrop-filter: blur(15px);
-} */
-
 nav{
     position: fixed;
     top: 0;
     left: 0;
     height: 8vh; width: 100%;
-    background: #fff;
+    background: transparent;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     .row{
-        width: 80%;
+        width: 70%;
+    }
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img[alt="logo"]{
+            width: 50px;
+        }
+        span{
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--clr-secondary);
+        }
     }
     .center{
         display: flex;
@@ -38,11 +32,8 @@ nav{
     }
     .right{
         display: flex;
-        justify-content: center;
-        align-items: right;
-    }
-    img[alt="logo"]{
-        width: 50px;
+        justify-content: flex-end;
+        align-items: center;
     }
     .menu{
         display: flex;
@@ -66,7 +57,6 @@ nav{
                 }
                 &:hover&&::after{
                     width: 100%;
-                    background: var(--clr-main);
                 }
                 &:hover{
                     color: var(--clr-alt);
@@ -75,6 +65,48 @@ nav{
         }
     }
 }
+
+@media (max-width: 1180px){
+    nav{
+        .left{
+            img[alt="logo"]{
+                width: 40px;
+            }
+            span{
+                display: none;
+                font-size: 1rem;
+            }
+        }
+    }
+}@media (max-width: 1024px){
+    nav{
+        .row{
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 768px){
+    nav{
+        .row{
+            width: 90%;
+        }
+        .left{
+            img[alt="logo"]{
+                width: 40px;
+            }
+            span{
+                display: none;
+                font-size: 1rem;
+            }
+        }
+        .right{
+            .menu{
+                display: none;
+            }
+        }
+    }
+}
+
 
 header{
     scroll-snap-align: start;
@@ -92,6 +124,18 @@ header{
         width: 100%;
         object-fit: cover;
         object-position: center;
+    }
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: color-mix(in srgb, transparent 68%, var(--clr-main));
+        backdrop-filter: blur(8px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 main{
