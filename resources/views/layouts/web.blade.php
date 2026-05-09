@@ -35,7 +35,10 @@
     <header>
         <video src="assets/kyn-ai-landing-hero.mp4" autoplay loop muted></video>
         <div class="header-overlay">
-            <h1>sdhfndsifo</h1>
+            <div class="row">
+                <div class="col-1"><h1>Kashyap Consultancy Services</h1></div>
+                <div class="col-2"></div>
+            </div>
         </div>
     </header>
     <main></main>

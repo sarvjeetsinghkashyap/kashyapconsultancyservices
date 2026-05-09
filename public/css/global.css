@@ -28,14 +28,18 @@
   flex: 2;
 }
 
-.btn{
-    background: var(--clr-main);
-    color: var(--clr-secondary);
+.btn, .btn-alt{
+  font-size: 0.8rem;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     transition: 300ms all ease-in-out;
+}
+
+.btn{
+    background: var(--clr-main);
+    color: var(--clr-secondary);
     &:hover{
         background: var(--clr-alt);
         color: var(--clr-main);
@@ -45,11 +49,6 @@
 .btn-alt{
     background: var(--clr-alt);
     color: var(--clr-main);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 300ms all ease-in-out;
     &:hover{
         background: var(--clr-main);
         color: var(--clr-alt);
