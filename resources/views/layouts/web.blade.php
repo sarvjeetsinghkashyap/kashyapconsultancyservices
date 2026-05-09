@@ -12,52 +12,21 @@
 <body>
     <nav>
         <div class="row">
-            <div class="col-1 left">
-                <img src="assets/logo.jpg" alt="logo">&nbsp
-                <span>Kashyap<br>Consultancy Services</span>
+            <div class="col nav-header">
+                <img src="../assets/emb.png" alt="logo">
             </div>
-            <div class="col-2 right">
-                <ul class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-                <button class="btn">Login</button>&nbsp
-                <button class="btn-alt">Sign Up</button>
-            </div>
-            {{-- <div class="col-1 right">
-                <button class="btn">Login</button>&nbsp
-                <button class="btn-alt">Sign Up</button>
-            </div> --}}
+            <ul class="col-2 nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <span class="toggle-menu menu-show">☰</span>
         </div>
     </nav>
-    <header>
-        <video src="assets/kyn-ai-landing-hero.mp4" autoplay loop muted></video>
-        <div class="header-overlay">
-            <div class="row">
-                <div class="col-1"><h1>Kashyap Consultancy Services</h1></div>
-                <div class="col-2"></div>
-            </div>
-        </div>
-    </header>
-    <main></main>
+@yield("content")
 </body>
 <script src="scripts/jquery.js"></script>
-<script>
-    $(document).ready(function(){
-        $(window).on("scroll", function() {
-            var vh = $(window).height() - 60;
-            if ($(window).scrollTop() > vh) {
-                $("nav").css({
-                    "background": "#fff"
-                });
-            } else {
-                $("nav").css({
-                    "background": "transparent"
-                });
-            }
-        });
-    });
-</script>
+<script src="scripts/script.js"></script>
+</htmlscript>
 </html>
