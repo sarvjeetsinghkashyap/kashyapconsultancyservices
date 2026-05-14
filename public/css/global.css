@@ -14,6 +14,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 
 .row{
   display: flex;
@@ -31,4 +36,68 @@
 }
 .col-2{
   flex: 2;
+}
+.mtb-50{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+
+.heading{
+  font-size: max(3vw, 1.2rem);
+  font-weight: 500;
+}
+
+.card-holder{
+  width: var(--width-std);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  .card{
+    .main-img{
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+      transition: 300ms ease-in-out;
+      
+      filter: blur(3px);
+      &:hover{
+        box-shadow: 0 0 10px var(--clr-main);
+      }
+    }
+    .card-heading{
+      margin-top: 20px;
+      font-size: max(2vw, 1.2rem);
+    }
+    .card-description{
+      margin-top: 10px;
+    }
+    .card-action{
+      position: relative;
+      width: 100%;
+      a{
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+        border-bottom: 1px solid #c5c5c5;
+
+        text-decoration: none;
+        color: #000;
+
+        &:hover{
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+  .card:hover .main-img{
+    filter: blur(0px);
+    transform: scale(1.1);
+  }
 }

@@ -1,3 +1,6 @@
+:root{
+    --width-std: 80%;
+}
 nav{
     position: fixed;
     top: 0;
@@ -14,7 +17,7 @@ nav{
     align-items: center;
 
     .row{
-        width: 80%; height: 100%;
+        width: var(--width-std); height: 100%;
     }
 
     .nav-header{
@@ -77,11 +80,11 @@ nav{
 }
 
 @media (width < 1200px){
+    :root{
+        --width-std: 95%;
+    }
     nav{
         height: 8vh;
-    }
-    nav .row{
-        width: 95%;
     }
     nav .nav-links{
         position: fixed;
@@ -112,13 +115,12 @@ nav{
     }
 }
 
-
 header{
     position: sticky;
     top: 0;
     left: 0;
     width: 100%; height: 100vh;
-    z-index: 0;
+    z-index: 10;
     transition: 300ms ease-in-out;
     video{
         width: 100%; height: 100%;
@@ -165,5 +167,21 @@ header{
                 box-shadow: 0 0 20px var(--clr-alt);
             }
         }
+    }
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .row{
+        width: var(--width-std);
+        /* background-color: red; */
     }
 }
