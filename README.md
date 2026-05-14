@@ -1,6 +1,6 @@
 # Kashyap Consultancy Services
 
-![Kashyap Consultancy Services Banner](https://via.placeholder.com/1000x300/1B3541/FFFFFF?text=Kashyap+Consultancy+Services+%7C+Strategic+Automation)
+![Kashyap Consultancy Services Banner]([https://via.placeholder.com/1000x300/1B3541/FFFFFF?text=Kashyap+Consultancy+Services+%7C+Strategic+Automation](https://media.licdn.com/dms/image/v2/D563DAQGhN9YjcR2D4A/image-scale_127_750/B56Z0qBt8KK0AM-/0/1774526588191/kashyapconsultancyservices_cover?e=1779357600&v=beta&t=UHGAVMrNSMjimXdZ-CEFnkmouA2unWI67nFdFfDnJGQ))
 
 ### **Modernizing the Foundation. Automating the Future.**
 
